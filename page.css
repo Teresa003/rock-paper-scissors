@@ -1,0 +1,78 @@
+/*here we repeat the positioning element with parent element, see user badge and score board styles*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: darkgray;
+	font-family: Asap, sans-serif;
+}
+img{
+	width: 120px;
+	height: 120px;
+	margin: 30px 15px;
+}
+img:hover{
+	width: 130px;
+	height: 130px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+#score-board{
+	margin: 50px auto;
+	border: 3px solid white;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	font-size: 52px;
+	width: 200px;
+	padding: 10px;
+	position: relative;
+
+}
+#user-badge{
+	position: absolute;
+	padding: 3px 5px;
+	left: -30px;
+	top: 33%;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+	
+}
+#computer-badge{
+	position: absolute;
+	padding: 3px 5px;
+	top: 33%;
+	right: -50px;
+	background-color: red;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+	
+}
+#info{
+	text-align: center;
+	font-weight: bold;
+	font-size: 42px;
+	padding: 15px;
+	color: white;
+}
+#game-board{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.info{
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 42px;
+	padding: 15px;
+	color: white;
+}
